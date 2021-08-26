@@ -1,0 +1,188 @@
+header {
+	display: flex;
+	width: 100%;
+	height: 22vh;
+	margin: auto;
+	align-items: center;
+	top: 0;
+	padding:25px 0;
+}
+
+.logo-container,
+.nav-links{
+	display: flex;
+}
+
+.logo-container {
+	flex: 1;
+}
+.logo {
+	font-weight: 1;
+	margin: 5px;
+}
+nav {
+	flex: 1;
+}
+.nav-links {
+	justify-content: space-around;
+	list-style: none;
+}
+.nav-links{
+	color: white;
+	font-size: xx-large;
+	text-decoration: none;
+}
+.navbar{
+    height: fit-content;
+}
+.nav-links:hover{
+    color: yellow;
+}
+span{
+    position: relative;
+    display: inline-flex;
+    width: 180px;
+    height: 55px;
+    margin: 0 15px;
+    perspective: 1000px;
+    margin-top: 10%;
+  }
+  span a{
+    font-size: 19px;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s;
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+  .cho{
+    z-index: 0;
+    position: fixed;
+  }
+  span a:before,
+  span a:after{
+    position: absolute;
+    content: "Rent a car";
+    height: 55px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  span a:before{
+    color: #fff;
+    background: #000;
+    transform: rotateY(0deg) translateZ(25px);
+  }
+  span a:after{
+    color: #000;
+    transform: rotateX(90deg) translateZ(25px);
+  }
+  span a:hover{
+    transform: translateZ(-25px) rotateX(-90deg);
+  }
+  /* lena */
+  .btn2{
+      position: relative;
+    display: inline-flex;
+    width: 180px;
+    height: 55px;
+    margin: 0 15px;
+    perspective: 1000px;
+    margin-top: 2%;
+    margin-left: 10%;
+  }
+  .btn2 a{
+    font-size: 19px;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s;
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+  .btn2 a:before,
+  .btn2 a:after{
+    position: absolute;
+    content: "About us ";
+    height: 55px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  .btn2 a:before{
+    color: #fff;
+    background: #000;
+    transform: rotateY(0deg) translateZ(25px);
+  }
+  .btn2 a:after{
+    color: #000;
+    transform: rotateX(90deg) translateZ(25px);
+  }
+  .btn2 a:hover{
+    transform: translateZ(-25px) rotateX(-90deg);
+  }
+  .dropdown{
+    display:inline-block;
+    position:relative;
+  }
+  .dropdown a{
+      color: white;
+    text-decoration: none;
+  }
+.dropdown button a:hover{
+    color: yellow;
+    text-decoration: none;
+}
+  .dropdown button{
+    border:none;
+    
+    background-color:transparent;
+    color:white;
+    transition:.3s;
+    cursor:pointer;
+  }
+  
+  .dropdown:hover button{
+    background-color:transparent;
+  }
+  .nav a{
+      text-decoration: none;
+  }
+  .dropdown div{
+    background-color:black;
+    box-shadow:0 4px 8px rgba(0,0,0,0.2);
+    z-index:1;
+    visibility:hidden;
+    position:absolute;
+    min-width:100%;
+    opacity:0;
+    transition:.3s;
+    border-radius: 10px;
+  }
+  
+  .dropdown:hover div{
+    visibility:visible;
+    opacity:1;
+  }
+  
+  .dropdown div a{
+    display:block;
+    text-decoration:none;
+    padding:8px;
+    color:white;
+    transition:.1s;
+    white-space:nowrap;
+  }
+  
+  .dropdown div a:hover{
+    color:yellow;
+  }
